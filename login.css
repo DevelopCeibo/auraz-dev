@@ -1,0 +1,59 @@
+html,
+body {
+  height: 100%;
+}
+
+:root {
+    --bs-primary: #E96629;
+}
+
+main {
+  background-image: url(img/cover-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100px ;
+  height: 810px;
+}
+
+.form-signin {
+  max-width: 370px;
+  padding: 15px;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+.boton {
+    background-color: var(--bs-primary);
+    border-color: #E96629;
+    color: #fff;
+    padding: 8px 16px;
+}
+.boton:hover {
+    background-color: #fff;
+    color: var(--bs-primary);
+    border-color: #fff;
+}
+.form-control:focus {
+    border-color: #E96629;
+}
+
+/* .form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+} */
+
+@media screen and (max-width: 575.98px) {
+    main {
+        background-position: top right;
+        background-size: cover;
+        min-height: fit-content;
+    }
+}
