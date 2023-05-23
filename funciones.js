@@ -35,7 +35,7 @@ function toggleContentChannel(value) {
   btn_press.src = `img/${value}_on.png`;
 
   let channels = document.querySelector(`#${value}`);
-  channels.style.display = "block";
+  channels.style.display = "flex";
 
 
 }
