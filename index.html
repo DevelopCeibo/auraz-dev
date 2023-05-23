@@ -491,8 +491,11 @@
             <div class="flecha bg-5">Retention</div>
           </div>
 
-          <div class="gusanito">
-            aca viene el grafico interactivo de las lineas
+          <div class="gusanito pt-2">
+            <img id="viborita-activista" src="img/CustomerJourney_ACT.png" style="display: block;" />
+            <img id="viborita-BT" src="img/CustomerJourney_BT.png" style="display: none;"  />
+            <img id="viborita-genz" src="img/CustomerJourney_GENZ.png" style="display: none;" />
+            
           </div>
 
           <article class="py-5">
@@ -1061,9 +1064,55 @@
         <div class="aprendizajes_canal">
           <article class="container">
             <h4 class="dosdos fw-bold">Aprendizajes por canal</h4>
-            <div>filtros</div>
+            <div id="filtros-canal" class="filtros">
+              
+                <img 
+                  id="btn-canal-tiktok" 
+                  src="img/tiktok_on.png"
+                  onclick="toggleContentChannel('tiktok');"  
+                  />
+                  <img 
+                  id="btn-canal-twitter" 
+                  src="img/twitter_off.png"
+                  onclick="toggleContentChannel('twitter');"  
+                  />
+                  <img 
+                  id="btn-canal-ads" 
+                  src="img/ads_off.png"
+                  onclick="toggleContentChannel('ads');"  
+                  />
+                  <img 
+                  id="btn-canal-youtube" 
+                  src="img/youtube_off.png"
+                  onclick="toggleContentChannel('youtube');"  
+                  />
+                  <img 
+                  id="btn-canal-email" 
+                  src="img/email_off.png"
+                  onclick="toggleContentChannel('email');"  
+                  />
+                  <img 
+                  id="btn-canal-meta" 
+                  src="img/meta_off.png"
+                  onclick="toggleContentChannel('meta');"  
+                  />
+                  <img 
+                  id="btn-canal-instagram" 
+                  src="img/instagram_off.png"
+                  onclick="toggleContentChannel('instagram');"  
+                  />
+                  <img 
+                  id="btn-canal-sms" 
+                  src="img/sms_off.png"
+                  onclick="toggleContentChannel('sms');"  
+                  />
 
-            <article id="tiktok" class="row my-4">
+                
+                
+              
+            </div>
+
+            <article id="tiktok" class="row my-4" style="display: block;">
               <div class="col-md-3">
                 <div class="cuadro-blanco">
                   <p class="unoseis">Presentó los <b>CTRs</b> más altos</p>
@@ -1108,7 +1157,7 @@
               </div>
             </article>
 
-            <article id="twitter" class="row justify-content-start my-4">
+            <article id="twitter" class="row justify-content-start my-4" style="display: none;">
               <div class="col-md-3">
                 <div class="cuadro-blanco">
                   <p class="unoseis">
@@ -1144,7 +1193,7 @@
               </div>
             </article>
 
-            <article id="ads" class="row justify-content-start my-4">
+            <article id="ads" class="row justify-content-start my-4" style="display: none;">
               <div class="col-md-3">
                 <div class="cuadro-blanco">
                   <p class="unoseis">
@@ -1180,7 +1229,7 @@
               </div>
             </article>
 
-            <article id="youtube" class="row my-4">
+            <article id="youtube" class="row my-4" style="display: none;">
               <div class="col-md-3">
                 <div class="cuadro-blanco">
                   <p class="unoseis">
@@ -1226,7 +1275,7 @@
               </div>
             </article>
 
-            <article id="emailing" class="row my-4">
+            <article id="email" class="row my-4" style="display: none;">
               <div class="col-md-3">
                 <div class="cuadro-blanco">
                   <p class="unoseis">
@@ -1273,7 +1322,7 @@
               </div>
             </article>
 
-            <article id="facebook-meta" class="row my-4">
+            <article id="meta" class="row my-4" style="display: none;">
               <div class="col-md-3">
                 <div class="cuadro-blanco">
                   <p class="unoseis">
@@ -1372,7 +1421,7 @@
               </div>
             </article>
 
-            <article id="instagram" class="row my-4">
+            <article id="instagram" class="row my-4" style="display: none;">
               <div class="col-md-3">
                 <div class="cuadro-blanco">
                   <p class="unoseis">
@@ -1423,7 +1472,7 @@
               </div>
             </article>
 
-            <article id="blog" class="row my-4">
+            <article id="sms" class="row my-4" style="display: none;">
               <div class="col-md-3">
                 <div class="cuadro-blanco">
                   <p class="unoseis">
