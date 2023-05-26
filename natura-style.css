@@ -366,6 +366,15 @@ ul > li::marker {
   background-color: #F1F1F1;
 }
 
+.naranja_texto {
+  color: #E96629;
+}
+
+.aprendizajes_procesos_implementacion {
+  padding: 60px 0;
+  background-color: #F1F1F1;
+}
+
 .aprendizajes_marca {
   padding: 50px 0;
   background-color: #fff;
