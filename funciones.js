@@ -8,11 +8,23 @@ function onSumbitLogin(event){
 
   //console.log({ email, password });
   
-  fetch('./users.json').then(response => {
+  fetch('https://auraz-dev.vercel.app/users.json').then(response => {
     return response.json();
   }).then(data => {
     // Work with JSON data here
-    console.log(data);
+    //console.log(data);
+    let obj = data.find(o => o.user === email && o.password === password);
+    if(obj){
+      console.log(obj, "<----Ok!!!")
+      localStorage.setItem("logged", "true");
+      window.location.href = "index.html";
+    }else{
+      console.log(obj, "Error!!!")
+      
+      return false;
+    }
+    //console.log(obj, "resultado")
+
   }).catch(err => {
     console.log(err, "error")
     // Do something for an error here
@@ -24,7 +36,7 @@ function onLoad(){
   let logged = localStorage.getItem("logged")
 
   if (!logged){
-    window.location.href = "login.html";
+    //window.location.href = "login.html";
   }
 
   console.log(logged, "logged")
