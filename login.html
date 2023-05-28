@@ -11,6 +11,8 @@
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+    <script src="funciones.js"></script>
+
 
     <title>Natura - Login</title>
 
@@ -32,11 +34,9 @@
         <div class="col-md-4 offset-md-7">
           <div class="form-signin">
             <form
-              name="login Natura"
-              action="index.html"
-              onsubmit="return handleFormSubmit(this)"
-              class="needs-validation"
-              novalidate
+              name="login"
+              onsubmit="onSumbitLogin(event)"
+              
             >
               <!-- method="post" -->
               <img
@@ -53,7 +53,8 @@
                 <input
                   type="email"
                   class="form-control"
-                  id="floatingInput"
+                  id="email"
+                  name="email"
                   placeholder="name@example.com"
                 />
                 <label for="floatingInput">Usuario / Email address</label>
@@ -62,7 +63,8 @@
                 <input
                   type="password"
                   class="form-control"
-                  id="floatingPassword"
+                  id="password"
+                  name="password"
                   placeholder="Password"
                 />
                 <label for="floatingPassword">Password</label>

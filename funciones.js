@@ -1,3 +1,36 @@
+
+
+function onSumbitLogin(event){
+  event.preventDefault();
+
+  const email = document.getElementById("email")?.value;
+  const password = document.getElementById("password")?.value;
+
+  //console.log({ email, password });
+  
+  fetch('./users.json').then(response => {
+    return response.json();
+  }).then(data => {
+    // Work with JSON data here
+    console.log(data);
+  }).catch(err => {
+    console.log(err, "error")
+    // Do something for an error here
+  });
+
+}
+
+function onLoad(){
+  let logged = localStorage.getItem("logged")
+
+  if (!logged){
+    window.location.href = "login.html";
+  }
+
+  console.log(logged, "logged")
+
+}
+
 function toggleContentChannel(value) {
   if (!value) return;
 
