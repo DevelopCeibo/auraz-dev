@@ -15,11 +15,13 @@ function onSumbitLogin(event){
     //console.log(data);
     let obj = data.find(o => o.user === email && o.password === password);
     if(obj){
-      console.log(obj, "<----Ok!!!")
+      //console.log(obj, "<----Ok!!!")
       localStorage.setItem("logged", "true");
       window.location.href = "index.html";
     }else{
       console.log(obj, "Error!!!")
+      localStorage.setItem("logged", "false");
+      alertError();
       
       return false;
     }
@@ -32,11 +34,24 @@ function onSumbitLogin(event){
 
 }
 
+function alertError(){
+  if(document.getElementById("alert").style.display === "none") {
+    document.getElementById("alert").style.display = "block";
+    setTimeout(function(){ 
+      document.getElementById("alert").style.display = "none"; 
+    }, 3000);
+  } else {
+    document.getElementById("alert").style.display = "none";
+  }
+
+  return true;
+}
+
 function onLoad(){
   let logged = localStorage.getItem("logged")
 
-  if (!logged){
-    //window.location.href = "login.html";
+  if (logged !== "true"){
+    window.location.href = "login.html";
   }
 
   console.log(logged, "logged")
