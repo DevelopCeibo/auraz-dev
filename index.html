@@ -49,9 +49,10 @@
               <a class="nav-link" href="#donde-partimos">¿De dónde partimos?</a>
               <a class="nav-link" href="#que-probamos">¿Qué probamos?</a>
               <a class="nav-link" href="#que-aprendimos">¿Qué aprendimos?</a>
-              <a class="nav-link" href="#aprendizajes"
-                >Aprendizajes de implementación</a
-              >
+              <a class="nav-link" href="aprendizajes.html"
+                >Aprendizajes de implementación
+                <i class="bi bi-box-arrow-up-right unoseis fw-bold"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -202,6 +203,17 @@
             Mapping de activación <br />
             de los arquetipos
           </h2>
+          <div class="cuadro-mapping">
+            <div class="imagen-mapping">
+              <img
+                src="img/cuadro-mapping.png"
+                class="img-fluid"
+                alt="Mapping"
+              />
+              <div type="button" class="boton-popover-1" data-bs-custom-class="custom-popover" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Los Multipasiones piensan en aunar pasión y trabajo en un mismo ámbito mientras que los Hiperconectados globalizarse, salir al mundo.">+</div>
+              <div type="button" class="boton-popover-2" data-bs-custom-class="custom-popover" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Los Activistas y Beauty Trenders, especialmente, pueden encontrar en Natura una marca que los convoca, una marca activista en unificar la naturaleza, con el bienestar... y por lo tanto con la belleza.">+</div>
+            </div>
+          </div>
           <div class="foto-lateral">
             <img src="img/foto_map.png" class="img-fluid" alt="foto" />
           </div>
@@ -480,7 +492,7 @@
               onclick="toggleContent('genz');"
             />
             <label class="btn boton-filtro filtro-genz" for="radio-genz"
-              >Genz</label
+              >GenZ</label
             >
           </div>
           <div class="flechas">
@@ -492,10 +504,27 @@
           </div>
 
           <div class="gusanito pt-2">
-            <img id="viborita-activista" src="img/CustomerJourney_ACT.png" height="95%" width="95%" style="display: block;" />
-            <img id="viborita-BT" src="img/CustomerJourney_BT.png"  height="95%" width="95%" style="display: none;"  />
-            <img id="viborita-genz" src="img/CustomerJourney_GENZ.png"  height="95%" width="95%" style="display: none;" />
-            
+            <img
+              id="viborita-activista"
+              src="img/CustomerJourney_ACT.png"
+              height="95%"
+              width="95%"
+              style="display: block"
+            />
+            <img
+              id="viborita-BT"
+              src="img/CustomerJourney_BT.png"
+              height="95%"
+              width="95%"
+              style="display: none"
+            />
+            <img
+              id="viborita-genz"
+              src="img/CustomerJourney_GENZ.png"
+              height="95%"
+              width="95%"
+              style="display: none"
+            />
           </div>
 
           <article class="py-5">
@@ -673,7 +702,7 @@
                   </tbody>
                 </table>
               </div>
-              <div class="justify-content-center">
+              <div class="justify-content-center text-center">
                 <button
                   class="btn bg-verde text-uppercase fw-bold text-white btn-lg px-5"
                 >
@@ -862,7 +891,7 @@
                   </tbody>
                 </table>
               </div>
-              <div class="justify-content-center w-100">
+              <div class="justify-content-center text-center w-100">
                 <button
                   class="btn bg-rojo text-uppercase fw-bold text-white btn-lg px-5"
                 >
@@ -1048,7 +1077,7 @@
                   </tbody>
                 </table>
               </div>
-              <div class="justify-content-center w-100">
+              <div class="justify-content-center text-center w-100">
                 <button
                   class="btn bg-violeta text-uppercase fw-bold text-white btn-lg px-5"
                 >
@@ -1060,59 +1089,66 @@
         </article>
       </section>
 
-      <section id="aprendizajes">
+      <section>
         <div class="aprendizajes_canal">
           <article class="container">
             <h4 class="dosdos fw-bold">Aprendizajes por canal</h4>
             <div id="filtros-canal" class="filtros">
-              
-                <img 
-                  id="btn-canal-tiktok" 
-                  src="img/tiktok_on.png"
-                  onclick="toggleContentChannel('tiktok');"  
-                  />
-                  <img 
-                  id="btn-canal-twitter" 
-                  src="img/twitter_off.png"
-                  onclick="toggleContentChannel('twitter');"  
-                  />
-                  <img 
-                  id="btn-canal-ads" 
-                  src="img/ads_off.png"
-                  onclick="toggleContentChannel('ads');"  
-                  />
-                  <img 
-                  id="btn-canal-youtube" 
-                  src="img/youtube_off.png"
-                  onclick="toggleContentChannel('youtube');"  
-                  />
-                  <img 
-                  id="btn-canal-email" 
-                  src="img/email_off.png"
-                  onclick="toggleContentChannel('email');"  
-                  />
-                  <img 
-                  id="btn-canal-meta" 
-                  src="img/meta_off.png"
-                  onclick="toggleContentChannel('meta');"  
-                  />
-                  <img 
-                  id="btn-canal-instagram" 
-                  src="img/instagram_off.png"
-                  onclick="toggleContentChannel('instagram');"  
-                  />
-                  <img 
-                  id="btn-canal-sms" 
-                  src="img/sms_off.png"
-                  onclick="toggleContentChannel('sms');"  
-                  />
-
-                
-                
-              
+              <img
+                id="btn-canal-tiktok"
+                src="img/tiktok_on.png"
+                onclick="toggleContentChannel('tiktok');"
+                style="cursor: pointer"
+              />
+              <img
+                id="btn-canal-twitter"
+                src="img/twitter_off.png"
+                onclick="toggleContentChannel('twitter');"
+                style="cursor: pointer"
+              />
+              <img
+                id="btn-canal-ads"
+                src="img/ads_off.png"
+                onclick="toggleContentChannel('ads');"
+                style="cursor: pointer"
+              />
+              <img
+                id="btn-canal-youtube"
+                src="img/youtube_off.png"
+                onclick="toggleContentChannel('youtube');"
+                style="cursor: pointer"
+              />
+              <img
+                id="btn-canal-email"
+                src="img/email_off.png"
+                onclick="toggleContentChannel('email');"
+                style="cursor: pointer"
+              />
+              <img
+                id="btn-canal-meta"
+                src="img/meta_off.png"
+                onclick="toggleContentChannel('meta');"
+                style="cursor: pointer"
+              />
+              <img
+                id="btn-canal-instagram"
+                src="img/instagram_off.png"
+                onclick="toggleContentChannel('instagram');"
+                style="cursor: pointer"
+              />
+              <img
+                id="btn-canal-sms"
+                src="img/sms_off.png"
+                onclick="toggleContentChannel('sms');"
+                style="cursor: pointer"
+              />
             </div>
 
-            <article id="tiktok" class="row justify-content-start my-4" style="display: flex;">
+            <article
+              id="tiktok"
+              class="row justify-content-start my-4"
+              style="display: flex"
+            >
               <div class="col-md-3">
                 <div class="cuadro-blanco">
                   <p class="unoseis">Presentó los <b>CTRs</b> más altos</p>
@@ -1157,7 +1193,11 @@
               </div>
             </article>
 
-            <article id="twitter" class="row justify-content-start my-4" style="display: none;">
+            <article
+              id="twitter"
+              class="row justify-content-start my-4"
+              style="display: none"
+            >
               <div class="col-md-3">
                 <div class="cuadro-blanco">
                   <p class="unoseis">
@@ -1193,7 +1233,11 @@
               </div>
             </article>
 
-            <article id="ads" class="row justify-content-start my-4" style="display: none;">
+            <article
+              id="ads"
+              class="row justify-content-start my-4"
+              style="display: none"
+            >
               <div class="col-md-3">
                 <div class="cuadro-blanco">
                   <p class="unoseis">
@@ -1229,7 +1273,11 @@
               </div>
             </article>
 
-            <article id="youtube" class="row justify-content-start my-4" style="display: none;">
+            <article
+              id="youtube"
+              class="row justify-content-start my-4"
+              style="display: none"
+            >
               <div class="col-md-3">
                 <div class="cuadro-blanco">
                   <p class="unoseis">
@@ -1275,7 +1323,11 @@
               </div>
             </article>
 
-            <article id="email" class="row justify-content-start my-4" style="display: none;">
+            <article
+              id="email"
+              class="row justify-content-start my-4"
+              style="display: none"
+            >
               <div class="col-md-3">
                 <div class="cuadro-blanco">
                   <p class="unoseis">
@@ -1322,7 +1374,11 @@
               </div>
             </article>
 
-            <article id="meta" class="row justify-content-start  my-4" style="display: none;">
+            <article
+              id="meta"
+              class="row justify-content-start my-4"
+              style="display: none"
+            >
               <div class="col-md-3">
                 <div class="cuadro-blanco">
                   <p class="unoseis">
@@ -1421,7 +1477,11 @@
               </div>
             </article>
 
-            <article id="instagram" class="row justify-content-start  my-4" style="display: none;">
+            <article
+              id="instagram"
+              class="row justify-content-start my-4"
+              style="display: none"
+            >
               <div class="col-md-3">
                 <div class="cuadro-blanco">
                   <p class="unoseis">
@@ -1472,7 +1532,11 @@
               </div>
             </article>
 
-            <article id="sms" class="row justify-content-start  my-4" style="display: none;">
+            <article
+              id="sms"
+              class="row justify-content-start my-4"
+              style="display: none"
+            >
               <div class="col-md-3">
                 <div class="cuadro-blanco">
                   <p class="unoseis">
@@ -1828,210 +1892,11 @@
             </article>
           </article>
         </div>
-        <div class="aprendizajes_procesos_implementacion">
-          <article class="container">
-            <h1 class="dosdos fw-bold naranja_texto pb-4">Aprendizajes de procesos e implementación</h1>
-            <h4 class="dosdos fw-bold pt-4">Temporalidad y contenidos</h4>
-              <article id="temporalidad_contentidos" class="row justify-content-start my-4 pt-4" style="display: flex;">
-                <div class="col-md-3">
-                  <div class="cuadro-blanco">
-                    <p class="unoseis">Realizar una priorización
-                      de los contenidos que se quieren testear</p>
-                    
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="cuadro-blanco">
-                    <p class="unoseis">
-                      Sugerimos probar cada contenido por más tiempo. Las plataformas tienen su tiempo de aprendizaje y terminó no siendo tan comparable un periodo del otro
-                    </p>
-                    
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="cuadro-blanco">
-                    <p class="unoseis">
-                      No pudimos testear todas las marcas con la misma intensidad
-                    </p>
-                    
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="cuadro-blanco">
-                    <p class="unoseis">
-                      Considerar el contexto de ofertas de VOL, que impacta en el atractivo diferencial de las ofertas llevadas al frente por el piloto
-                    </p>
-                    
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="cuadro-blanco">
-                    <p class="unoseis">
-                      Considerar el contexto del año en el que se realiza un piloto y como va a impactar en el mismo (Navidad, Hot Sale, Black Friday, etc)
-                    </p>
-                    
-                  </div>
-                </div>
-              </article>
-              
-              <h4 class="dosdos fw-bold pt-4">Sistemas y herramientas</h4>
-
-              <article id="Sistemas_herramientas" class="row justify-content-start my-4 pt-4" style="display: flex;">
-                <div class="col-md-3">
-                  <div class="cuadro-blanco">
-                    <p class="unoseis">Solicitar todos los accesos necesarios a las distintas herramientas con anticipación (Salesforce, Outlook, Chamado fácil, etc) porque suelen demorar varios días</p>
-                    
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="cuadro-blanco">
-                    <p class="unoseis">
-                      El ecommerce de Natura no cuenta con UTMs, por lo tanto, no se puede identificar de qué campaña o que medio viene cada cadastro  
-                    </p>
-                    
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="cuadro-blanco">
-                    <p class="unoseis">
-                      No es posible editar los emails transversales de CRM (cumpleaños, bienvenida, aniversario, etc), ya que su mayoría funcionan vía API o con una automatización
-                    </p>
-                    
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="cuadro-blanco">
-                    <p class="unoseis">
-                      Corroborar los campos de email con el formato correcto para evitar hard errors al cargar manualmente bases a Salesforce
-                    </p>
-                    
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="cuadro-blanco">
-                    <p class="unoseis">
-                      Realizar pruebas exhaustivas estandarizadas pre Go Live de cada período para garantizar el correcto funcionamiento de los flujos de email  
-                    </p>
-                    
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="cuadro-blanco">
-                    <p class="unoseis">
-                      Evitar realizar un piloto durante un proceso de cambio de plataforma (por ejemplo: migración de Drupal a Salesforce) para evitar retrasos y problemas de datos  
-                    </p>
-                    
-                  </div>
-                </div>
-              </article>
-
-              <h4 class="dosdos fw-bold pt-4">Equipos</h4>
-              <article id="equipos" class="row justify-content-start my-4 pt-4" style="display: flex;">
-                <div class="col-md-3">
-                  <div class="cuadro-blanco">
-                    <p class="unoseis">
-                      Se deben definir fechas claras con CRM para los distintos procesos y activaciones. Organizar una reunión semanal con ellos de update fue clave durante el piloto 
-                    </p>
-                    
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="cuadro-blanco">
-                    <p class="unoseis">
-                      Tener un referente claro por equipo involucrado en el proyecto  
-                    </p>
-                    
-                  </div>
-                </div>
-                
-              </article>
-
-              <h4 class="dosdos fw-bold pt-4">Agencia de medios</h4>
-
-              <article id="agencia_medios" class="row justify-content-start my-4 pt-4" style="display: flex;">
-                <div class="col-md-3">
-                  <div class="cuadro-blanco">
-                    <p class="unoseis">
-                      Dependencia para observar resultados e implementación de campañas 
-                    </p>
-                    
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="cuadro-blanco">
-                    <p class="unoseis">
-                      Se debe asegurar los reportes en el formato y con la recurrencia requeridos  
-                    </p>
-                    
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="cuadro-blanco">
-                    <p class="unoseis">
-                      Definir con antemano los tiempos de implementación que van a requerir para evitar retrasos  
-                    </p>
-                    
-                  </div>
-                </div>
-                
-              </article>
-
-              <h4 class="dosdos fw-bold pt-4">Canales</h4>
-              <article id="canales" class="row justify-content-start my-4 pt-4" style="display: flex;">
-                <div class="col-md-3">
-                  <div class="cuadro-blanco">
-                    <p class="unoseis">
-                      Tik Tok no permite realizar retargeting diferenciado según la sección del ecommerce visitada 
-                    </p>
-                    
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="cuadro-blanco">
-                    <p class="unoseis">
-                      Es difícil popular bases en Twitter, ya que muchas veces se utilizan emails diferentes a los que se utilizaron para el cadastro en el ecommerce  
-                    </p>
-                    
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="cuadro-blanco">
-                    <p class="unoseis">
-                      La agencia en este caso no pudo diferenciar las piezas pautadas en Google Display al momento de realizar los reportes  
-                    </p>
-                    
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="cuadro-blanco">
-                    <p class="unoseis">
-                      Si se quiere trabajar con influencers se debe tener en cuenta los tiempos de negociación y de implementación (idealmente se debe trabajar con al menos 3 semanas de anticipación)  
-                    </p>
-                    
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="cuadro-blanco">
-                    <p class="unoseis">
-                      Las landing pages no obtuvieron los niveles de registros que esperábamos. La gente permaneció menos de un minuto en ella y la tasa de conversión fue baja  
-                    </p>
-                    
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="cuadro-blanco">
-                    <p class="unoseis">
-                      El ecommerce de Argentina y de Chile no tienen el opt-in de Whatsapp en el formulario de registro. Hay actualizar los T&C que el cliente acepta cuando deja sus datos para poder enviarle mensajería directa  
-                    </p>
-                    
-                  </div>
-                </div>
-              </article>
-
-          </article>
-        </div>
       </section>
     </main>
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
