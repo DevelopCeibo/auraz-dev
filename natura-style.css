@@ -588,4 +588,9 @@ ul > li::marker {
     right: 34px;
     top: 14%;
   }
+  #tiktok, #twitter, #ads, #sms, #meta, #instagram, #email, #youtube {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-y: auto;
+  }
 }
