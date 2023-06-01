@@ -10,9 +10,9 @@ body {
 .area-login {
   background-image: url(img/cover-1.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  /* padding-top: 100px ; */
-  min-height: 810px;
+  background-size: contain;
+  height: auto !important;
+  min-height: 100%;
 }
 .caja-login {
   padding-top: 100px;
