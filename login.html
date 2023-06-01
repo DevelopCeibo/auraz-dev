@@ -13,81 +13,86 @@
     />
     <script src="funciones.js"></script>
 
-
     <title>Natura - Login</title>
-    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png" />
 
     <!-- Custom styles for this template -->
     <link href="login.css" rel="stylesheet" />
   </head>
   <body>
     <header>
-        <nav class="navbar bg-dark">
-            <div class="container">
-              <a class="navbar-brand" href="https://ceibo.digital">
-                <img src="img/ceibo.png" alt="Ceibo" class="img-fluid">
-              </a>
-            </div>
-          </nav>
+      <nav class="navbar bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="https://ceibo.digital">
+            <img src="img/ceibo.png" alt="Ceibo" class="img-fluid" />
+          </a>
+        </div>
+      </nav>
     </header>
     <main>
-      
-      <article class="row m-0">
-        <div class="col-md-4 offset-md-7">
-          <div class="form-signin">
-            <form
-              name="login"
-              onsubmit="return onSumbitLogin(event)"
-              class="need-validation"
-            >
-              <!-- method="post" -->
-              <img
-                class="mb-4 img-fluid"
-                src="img/natura.png"
-                alt="logo Natura"
-                width="124"
-              />
-              <h1 class="display-3 text-white mb-3 fw-bold">
-                Ingresá a Aura Z
-              </h1>
-              <div id="alert" class="alert alert-danger " role="alert" style="display: none;">
-                Credenciales invalidas!!!
-              </div>
-
-              <div class="form-floating mb-3">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  name="email"
-                  placeholder="name@example.com"
-                  required
-                />
-                <label for="floatingInput">Usuario / Email address</label>
-              </div>
-              <div class="form-floating mb-5">
-                <input
-                  type="password"
-                  class="form-control"
-                  id="password"
-                  name="password"
-                  placeholder="Password"
-                  required
-                />
-                <label for="floatingPassword">Password</label>
-              </div>
-
-              <button
-                class="w-100 boton btn btn-lg text-uppercase "
-                type="submit"
+      <section class="area-login">
+        <article class="caja-login row m-0">
+          <div class="col-md-4 offset-md-7">
+            <div class="form-signin">
+              <form
+                name="login"
+                onsubmit="return onSumbitLogin(event)"
+                class="need-validation"
               >
-                Ingresar
-              </button>
-              <!-- <p class="mt-5 mb-3 text-muted">&copy; 2017–2022</p> -->
-            </form>
+                <!-- method="post" -->
+                <img
+                  class="mb-4 img-fluid"
+                  src="img/natura.png"
+                  alt="logo Natura"
+                  width="124"
+                />
+                <h1 class="display-3 text-white mb-3 fw-bold">
+                  Ingresá a Aura Z
+                </h1>
+                <div
+                  id="alert"
+                  class="alert alert-danger"
+                  role="alert"
+                  style="display: none"
+                >
+                  Credenciales invalidas!!!
+                </div>
+
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="name@example.com"
+                    required
+                  />
+                  <label for="floatingInput">Usuario / Email address</label>
+                </div>
+                <div class="form-floating mb-5">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    name="password"
+                    placeholder="Password"
+                    required
+                  />
+                  <label for="floatingPassword">Password</label>
+                </div>
+
+                <button
+                  class="w-100 boton btn btn-lg text-uppercase"
+                  type="submit"
+                >
+                  Ingresar
+                </button>
+                <!-- <p class="mt-5 mb-3 text-muted">&copy; 2017–2022</p> -->
+              </form>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
+      </section>
     </main>
 
     <script

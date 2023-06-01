@@ -7,12 +7,15 @@ body {
     --bs-primary: #E96629;
 }
 
-main {
+.area-login {
   background-image: url(img/cover-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 100px ;
+  /* padding-top: 100px ; */
   height: 810px;
+}
+.caja-login {
+  padding-top: 100px;
 }
 
 .form-signin {
@@ -51,7 +54,7 @@ main {
 } */
 
 @media screen and (max-width: 575.98px) {
-    main {
+    .area-login {
         background-position: top right;
         background-size: cover;
         min-height: fit-content;
