@@ -12,7 +12,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   /* padding-top: 100px ; */
-  height: 810px;
+  min-height: 810px;
 }
 .caja-login {
   padding-top: 100px;
