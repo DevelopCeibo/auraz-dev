@@ -41,8 +41,11 @@ header {
   background-image: url(img/cover-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 150px;
-  height: 810px;
+  /* padding-top: 150px; */
+  min-height: 810px;
+}
+.texto-cabecera {
+  padding-top: 120px;
 }
 .gran-display {
   font-size: calc(2.5rem + 4.5vw);
@@ -538,8 +541,11 @@ ul > li::marker {
   .cabecera {
     background-position: top right;
     background-size: cover;
+    /* padding: 90px 0; */
+    min-height: fit-content;
+  }
+  .texto-cabecera {
     padding: 90px 0;
-    height: fit-content;
   }
   .nav-link:first-child {
     padding-top: 30px;
