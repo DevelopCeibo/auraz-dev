@@ -37,15 +37,19 @@ header {
 .naranja {
   color: var(--bs-primary);
 }
-.cabecera {
+/* .cabecera {
   background-image: url(img/cover-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  /* padding-top: 150px; */
-  min-height: 810px;
-}
+  /* padding-top: 150px; 
+  min-height: 850px;
+} */
 .texto-cabecera {
-  padding-top: 120px;
+  /* padding-top: 120px; */
+  position: absolute;
+  top: 13%;
+  left: 55%;
+  margin-right: 100px;
 }
 .gran-display {
   font-size: calc(2.5rem + 4.5vw);
@@ -109,7 +113,7 @@ ul > li::marker {
 }
 .imagen-mapping {
   position: relative;
-  width: 914px;
+  max-width: 914px;
 }
 .boton-popover-1 {
   position: absolute;
@@ -464,7 +468,8 @@ ul > li::marker {
   background-color: #F1F1F1;
   color: #000;
   font-size: 16px;
-  width: 265px;
+  /* width: 265px; */
+  width: 240px;
   height: 180px;
   border-radius: 30px;
   display: flex;
@@ -479,7 +484,8 @@ ul > li::marker {
   background-color: #F1F1F1;
   color: #000;
   font-size: 16px;
-  min-width: 265px;
+  /* min-width: 265px; */
+  width: 240px;
   min-height: 180px;
   border-radius: 30px;
   display: flex;
@@ -519,12 +525,29 @@ ul > li::marker {
   bottom: 15px;
   color: #f1f1f1;
 }
+#que-es {
+  align-items: center;
+}
+#donde-partimos {
+  align-items: center;
+}
 
 
 /* MOBILE */
 @media (min-width: 1200px) {
   .gran-display {
     font-size: 125px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .texto-cabecera {
+    left: 5%;
+  }
+  #que-es {
+    align-items: inherit;
+  }
+  #donde-partimos {
+    align-items: inherit;
   }
 }
 @media screen and (max-width: 767.98px) {
@@ -536,17 +559,27 @@ ul > li::marker {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
-}
-@media screen and (max-width: 575.98px) {
-  .cabecera {
+    .cabecera {
     background-position: top right;
+    background-image: url(img/cover-1.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     /* padding: 90px 0; */
     min-height: fit-content;
   }
+  .hero {
+    display: none;
+  }
   .texto-cabecera {
     padding: 90px 0;
+    position: relative;
+    margin: 0 20px;
+    top: 0;
+    left: 0;
   }
+}
+@media screen and (max-width: 575.98px) {
+
   .nav-link:first-child {
     padding-top: 30px;
   }
