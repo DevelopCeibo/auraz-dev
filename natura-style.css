@@ -411,6 +411,9 @@ ul > li::marker {
   justify-content: center;
   align-items: center;
 }
+.burbuja-larga-tabla {
+  min-width: 100% !important;
+}
 .aprendizajes_canal {
   padding: 60px 0;
   background-color: #F1F1F1;
@@ -629,6 +632,11 @@ ul > li::marker {
   }
   #tiktok, #twitter, #ads, #sms, #meta, #instagram, #email, #youtube {
     flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-y: auto;
+  }
+  .mensaje-pilar-formato, .por-marca {
+    display: flex;
     flex-wrap: nowrap;
     overflow-y: auto;
   }

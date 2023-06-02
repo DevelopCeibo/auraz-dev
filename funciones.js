@@ -128,6 +128,25 @@ function toggleContent(value) {
     
   }
 
+  function verEjemplo(str) {
+
+    var element = document.getElementById("btn1");
+    var element1 = document.getElementById("btn2");
+   
+      if(str==1){
+   
+      element1.classList.remove("mystyle1");
+      element.classList.toggle("mystyle");
+   
+       }else{
+   
+      element1.classList.toggle("mystyle1");
+      element.classList.remove("mystyle");
+   
+       }
+   
+   }
+
   const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
   const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
   
