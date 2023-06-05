@@ -560,7 +560,11 @@
             >
           </div>
 
-          <article id="banderas" class="position-absolute h-100" style="display: none;">
+          <article
+            id="banderas"
+            class="position-absolute h-100"
+            style="display: none"
+          >
             <div class="banderas-filtro">
               <img
                 id="btn-pais-argentina"
@@ -579,11 +583,8 @@
             </div>
           </article>
 
-          <section
-            id="argentina"
-            class="row justify-content-start my-3"            
-          >
-            <article id="aprendizaje_ar" class="row py-4" style="display: none;">
+          <section id="argentina" class="row justify-content-start my-3">
+            <article id="aprendizaje_ar" class="row py-4" style="display: none">
               <div class="col-md-4">
                 <div class="cuadro-largo bg-verde text-white">
                   <p>
@@ -623,6 +624,763 @@
                 </div>
               </div>
             </article>
+
+            <div id="journey" class="flechas" style="display: none">
+              <div class="flecha bg-1">Awareness</div>
+              <div class="flecha bg-2">Research</div>
+              <div class="flecha bg-3">Consideration</div>
+              <div class="flecha bg-4">
+                Purchase
+                <i
+                  class="bi bi-info-circle fs-5"
+                  data-bs-toggle="popover"
+                  data-bs-placement="top"
+                  data-bs-content="No pudimos obtener información sobre la experiencia de compra y entrega del cliente: resta evaluar información de reclamos/ encuesta para ganar entendimiento de este MOT"
+                  style="cursor: pointer"
+                ></i>
+              </div>
+              <div class="flecha bg-5">Retention</div>
+            </div>
+
+            <div class="gusanito pt-2">
+              <img
+                id="viborita-activista-ar"
+                src="img/AR_customer_ACT.png"
+                class="img-fluid"
+                style="display: none"
+              />
+              <img
+                id="viborita-BT-ar"
+                src="img/AR_customer_BT.png"
+                class="img-fluid"
+                style="display: none"
+              />
+              <img
+                id="viborita-genz-ar"
+                src="img/AR_customer_GENZ.png"
+                class="img-fluid"
+                style="display: none"
+              />
+              <div
+                id="referencias2"
+                class="w-100 m-0 justify-content-end"
+                style="display: none"
+              >
+                <img
+                  src="img/referencias.png"
+                  class="img-fluid"
+                  alt="referencias"
+                />
+              </div>
+            </div>
+
+            <article>
+
+              <div class="collapse" id="tabla-activista-ar" style="display: none">
+                <h4 class="dosdos fw-bold">¿Qué es lo que mejor performó?</h4>
+                <small
+                  >Click en los filtros de arriba para ver los resultados</small
+                >
+                <div class="table-responsive my-5">
+                  <table class="table table-borderless align-middle">
+                    <div class="text-center justify-content-center">
+                      <tr>
+                        <td scope="col">
+                          <div class="flecha-2 bg-1">Awareness</div>
+                        </td>
+                        <td>
+                          <div class="flecha-2 bg-2">Research</div>
+                        </td>
+                        <td>
+                          <div class="flecha-2 bg-3">Consideration</div>
+                        </td>
+                        <td>
+                          <div class="flecha-2 bg-4">Purchase</div>
+                        </td>
+                        <td>
+                          <div class="flecha-2 bg-5">Retention</div>
+                        </td>
+                      </tr>
+                    </div>
+                    <tbody class="text-center">
+                      <tr>
+                        <td scope="col" colspan="3">
+                          <div
+                            class="burbuja-tabla burbuja-larga-tabla bg-verde dosdos"
+                          >
+                            Canal
+                          </div>
+                        </td>
+                        <!-- <td scope="col">
+                        <div class="burbuja-tabla bg-verde dosdos">Canal</div>
+                      </td>
+                      <td scope="col">
+                        <div class="burbuja-tabla bg-verde dosdos">Canal</div>
+                      </td> -->
+                        <td scope="col">
+                          <div class="burbuja-tabla bg-verde unoocho">
+                            Hábitos de compra
+                          </div>
+                        </td>
+                        <td scope="col">
+                          <div class="burbuja-tabla bg-verde unoocho">
+                            Top Engagement
+                            <i
+                              class="bi bi-info-circle ms-3"
+                              data-bs-toggle="popover"
+                              data-bs-placement="top"
+                              data-bs-content="Productos con mejor performance en el carrusel de Meta"
+                              style="cursor: pointer"
+                            ></i>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class="align-top">
+                        <th scope="row">
+                          <div class="iconos-sociales-tabla">
+                            <i class="bi bi-twitter"></i>
+                            <i class="bi"
+                              ><span
+                                class="iconify iconify-tabla"
+                                data-icon="mdi:google-ads"
+                              ></span
+                            ></i>
+                          </div>
+                        </th>
+                        <td>
+                          <div class="iconos-sociales-tabla">
+                            <i class="bi bi-tiktok"></i>
+                            <i class="bi bi-youtube"></i>
+                            <i class="bi"
+                              ><span
+                                class="iconify iconify-tabla"
+                                data-icon="mdi:google-ads"
+                              ></span
+                            ></i>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="iconos-sociales-tabla">
+                            <i class="bi bi-tiktok"></i>
+                          </div>
+                        </td>
+                        <td rowspan="7" class="text-start">
+                          Las marcas más compradas por esta generación son:
+                          <b>Tododia, Lumina y Ekos</b><br /><br />
+                          <b>Al cierre de AuraZ:</b>
+                          <ul>
+                            <li>91.5% inactivos</li>
+                            <li>4.6% activos no recientes</li>
+                            <li>3.7% activos recientes</li>
+                          </ul>
+                          <b>De la base convertida:</b>
+                          <ul>
+                            <li>72% son compradores de una única vez</li>
+                            <li>14% son reincidentes(2 órdenes)</li>
+                            <li>14% son frecuentes (más de tres órdenes)</li>
+                          </ul>
+                        </td>
+                        <td rowspan="7">
+                          <div>
+                            <img
+                              src="img/activista/prod-1.png"
+                              class="img-fluid"
+                              alt="top"
+                            />
+                            <img
+                              src="img/activista/prod-22.png"
+                              class="img-fluid"
+                              alt="top"
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row" colspan="3">
+                          <div
+                            class="burbuja-tabla burbuja-larga-tabla bg-verde dosdos"
+                          >
+                            Marca
+                          </div>
+                        </th>
+                        <!-- <td>
+                        <div class="burbuja-tabla bg-verde dosdos">Marca</div>
+                      </td>
+                      <td>
+                        <div class="burbuja-tabla bg-verde dosdos">Marca</div>
+                      </td> -->
+                      </tr>
+                      <tr>
+                        <td scope="row">
+                          Kaiak, Luimina,<br />
+                          UNA y Faces
+                        </td>
+                        <td>Kaiak<br />Ekos</td>
+                        <td>UNA <br />Humor</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" colspan="3">
+                          <div
+                            class="burbuja-tabla burbuja-larga-tabla bg-verde dosdos"
+                          >
+                            Pilar
+                          </div>
+                        </th>
+                        <!-- <td>
+                        <div class="burbuja-tabla bg-verde dosdos">Pilar</div>
+                      </td>
+                      <td>
+                        <div class="burbuja-tabla bg-verde dosdos">Pilar</div>
+                      </td> -->
+                      </tr>
+                      <tr>
+                        <td scope="row">Usos, Atributos <br />e Innovación</td>
+                        <td>Causas<br />Innovación</td>
+                        <td>Usos, Ofertas y <br />Atributos de producto</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" colspan="3">
+                          <div
+                            class="burbuja-tabla burbuja-larga-tabla bg-verde dosdos"
+                          >
+                            Top performer
+                          </div>
+                        </th>
+                        <!-- <td>
+                        <div class="burbuja-tabla bg-verde dosdos">
+                          Top performer
+                        </div>
+                      </td>
+                      <td>
+                        <div class="burbuja-tabla bg-verde dosdos">
+                          Top performer
+                        </div>
+                      </td> -->
+                      </tr>
+                      <tr class="align-top">
+                        <td>
+                          <img
+                            src="img/activista/top-1.png"
+                            class="img-fluid"
+                            alt="top performer"
+                          />
+                          <img
+                            src="img/activista/top-2.png"
+                            class="img-fluid"
+                            alt="top performer"
+                          />
+                        </td>
+                        <td>
+                          <img
+                            src="img/activista/top-3.png"
+                            class="img-fluid"
+                            alt="top performer"
+                          />
+                          <img
+                            src="img/activista/top-4.png"
+                            class="img-fluid"
+                            alt="top performer"
+                          />
+                        </td>
+                        <td>
+                          <img
+                            src="img/activista/top-5.png"
+                            class="img-fluid"
+                            alt="top performer"
+                          />
+                          <img
+                            src="img/activista/top-6.png"
+                            class="img-fluid"
+                            alt="top performer"
+                          />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="justify-content-center text-center">
+                  <button
+                    class="btn bg-verde text-uppercase fw-bold text-white btn-lg px-5"
+                  >
+                    Ver moodboard activista
+                  </button>
+                </div>
+              </div>
+              <div class="collapse" id="tabla-BT-ar" style="display: none">
+                <h4 class="dosdos fw-bold">¿Qué es lo que mejor performó?</h4>
+                <small
+                  >Click en los filtros de arriba para ver los resultados</small
+                >
+                <div class="table-responsive my-5">
+                  <table class="table table-borderless align-middle">
+                    <div class="text-center justify-content-center">
+                      <tr>
+                        <td scope="col">
+                          <div class="flecha-2 bg-1">Awareness</div>
+                        </td>
+                        <td>
+                          <div class="flecha-2 bg-2">Research</div>
+                        </td>
+                        <td>
+                          <div class="flecha-2 bg-3">Consideration</div>
+                        </td>
+                        <td>
+                          <div class="flecha-2 bg-4">Purchase</div>
+                        </td>
+                        <td>
+                          <div class="flecha-2 bg-5">Retention</div>
+                        </td>
+                      </tr>
+                    </div>
+                    <tbody class="text-center">
+                      <tr>
+                        <td scope="col" colspan="3">
+                          <div class="burbuja-tabla burbuja-larga-tabla bg-rojo dosdos">Canal</div>
+                        </td>
+                        <!-- <td scope="col">
+                          <div class="burbuja-tabla bg-rojo dosdos">Canal</div>
+                        </td>
+                        <td scope="col">
+                          <div class="burbuja-tabla bg-rojo dosdos">Canal</div>
+                        </td> -->
+                        <td scope="col">
+                          <div class="burbuja-tabla bg-rojo unoocho">
+                            Hábitos de compra
+                          </div>
+                        </td>
+                        <td scope="col">
+                          <div class="burbuja-tabla bg-rojo unoocho">
+                            Top Engagement
+                            <i
+                              class="bi bi-info-circle ms-3"
+                              data-bs-toggle="popover"
+                              data-bs-placement="top"
+                              data-bs-content="Productos con mejor performance en el carrusel de Meta"
+                              style="cursor: pointer"
+                            ></i>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr class="align-top">
+                        <th scope="row">
+                          <div class="iconos-sociales-tabla">
+                            <i class="bi"
+                              ><span
+                                class="iconify iconify-tabla"
+                                data-icon="mdi:google-ads"
+                              ></span
+                            ></i>
+                            <i class="bi bi-tiktok"></i>
+                            <i class="bi bi-youtube"></i>
+                          </div>
+                        </th>
+                        <td>
+                          <div class="iconos-sociales-tabla">
+                            <i class="bi bi-tiktok"></i>
+                            <i
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="48"
+                                height="48"
+                                fill="currentColor"
+                                class="bi bi-meta"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M8.217 5.243C9.145 3.988 10.171 3 11.483 3 13.96 3 16 6.153 16.001 9.907c0 2.29-.986 3.725-2.757 3.725-1.543 0-2.395-.866-3.924-3.424l-.667-1.123-.118-.197a54.944 54.944 0 0 0-.53-.877l-1.178 2.08c-1.673 2.925-2.615 3.541-3.923 3.541C1.086 13.632 0 12.217 0 9.973 0 6.388 1.995 3 4.598 3c.319 0 .625.039.924.122.31.086.611.22.913.407.577.359 1.154.915 1.782 1.714Zm1.516 2.224c-.252-.41-.494-.787-.727-1.133L9 6.326c.845-1.305 1.543-1.954 2.372-1.954 1.723 0 3.102 2.537 3.102 5.653 0 1.188-.39 1.877-1.195 1.877-.773 0-1.142-.51-2.61-2.87l-.937-1.565ZM4.846 4.756c.725.1 1.385.634 2.34 2.001A212.13 212.13 0 0 0 5.551 9.3c-1.357 2.126-1.826 2.603-2.581 2.603-.777 0-1.24-.682-1.24-1.9 0-2.602 1.298-5.264 2.846-5.264.091 0 .181.006.27.018Z"
+                                />
+                              </svg>
+                            </i>
+                            <i class="bi"
+                              ><span
+                                class="iconify iconify-tabla"
+                                data-icon="mdi:google-ads"
+                              ></span
+                            ></i>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="iconos-sociales-tabla">
+                            <i class="bi bi-tiktok"></i>
+                          </div>
+                        </td>
+                        <td rowspan="7" class="text-start">
+                          Las marcas más compradas por esta generación son:
+                          <b>Tododia, Lumina y Ekos</b><br /><br />
+                          <b>Al cierre de AuraZ:</b>
+                          <ul>
+                            <li>91.5% inactivos</li>
+                            <li>4.6% activos no recientes</li>
+                            <li>3.7% activos recientes</li>
+                          </ul>
+                          <b>De la base convertida:</b>
+                          <ul>
+                            <li>72% son compradores de una única vez</li>
+                            <li>14% son reincidentes(2 órdenes)</li>
+                            <li>14% son frecuentes (más de tres órdenes)</li>
+                          </ul>
+                        </td>
+                        <td rowspan="7">
+                          <div>
+                            <img
+                              src="img/BT/productos.png"
+                              class="img-fluid"
+                              alt="top"
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row" colspan="3">
+                          <div class="burbuja-tabla burbuja-larga-tabla bg-rojo dosdos">Marca</div>
+                        </th>
+                        <!-- <td>
+                          <div class="burbuja-tabla bg-rojo dosdos">Marca</div>
+                        </td>
+                        <td>
+                          <div class="burbuja-tabla bg-rojo dosdos">Marca</div>
+                        </td> -->
+                      </tr>
+                      <tr>
+                        <td scope="row">
+                          UNA, Faces, Lumina, <br />Kaiak y Ekos
+                        </td>
+                        <td>Chronos, Faces <br />y Ekos</td>
+                        <td>UNA<br />Humor</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" colspan="3">
+                          <div class="burbuja-tabla burbuja-larga-tabla bg-rojo dosdos">Pilar</div>
+                        </th>
+                        <!-- <td>
+                          <div class="burbuja-tabla bg-rojo dosdos">Pilar</div>
+                        </td>
+                        <td>
+                          <div class="burbuja-tabla bg-rojo dosdos">Pilar</div>
+                        </td> -->
+                      </tr>
+                      <tr>
+                        <td scope="row">
+                          Atributos de productos <br />Usos y Causas
+                        </td>
+                        <td>Causas<br />Usos</td>
+                        <td>Usos<br />Omnicanalidad</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" colspan="3">
+                          <div class="burbuja-tabla burbuja-larga-tabla bg-rojo dosdos">
+                            Top performer
+                          </div>
+                        </th>
+                        <!-- <td>
+                          <div class="burbuja-tabla bg-rojo dosdos">
+                            Top performer
+                          </div>
+                        </td>
+                        <td>
+                          <div class="burbuja-tabla bg-rojo dosdos">
+                            Top performer
+                          </div>
+                        </td> -->
+                      </tr>
+                      <tr class="align-top">
+                        <td>
+                          <img
+                            src="img/BT/top-1.png"
+                            class="img-fluid"
+                            alt="top performer"
+                          />
+                          <img
+                            src="img/BT/top-2.png"
+                            class="img-fluid"
+                            alt="top performer"
+                          />
+                        </td>
+                        <td>
+                          <img
+                            src="img/BT/top-3.png"
+                            class="img-fluid"
+                            alt="top performer"
+                          />
+                          <img
+                            src="img/BT/top-4.png"
+                            class="img-fluid"
+                            alt="top performer"
+                          />
+                        </td>
+                        <td>
+                          <img
+                            src="img/BT/top-5.png"
+                            class="img-fluid"
+                            alt="top performer"
+                          />
+                          <img
+                            src="img/BT/top-6.png"
+                            class="img-fluid"
+                            alt="top performer"
+                          />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="justify-content-center text-center w-100">
+                  <button
+                    class="btn bg-rojo text-uppercase fw-bold text-white btn-lg px-5"
+                  >
+                    Ver moodboard Beauty Trender
+                  </button>
+                </div>
+              </div>
+              <div class="collapse" id="tabla-genz-ar" style="display: none">
+                <h4 class="dosdos fw-bold">¿Qué es lo que mejor performó?</h4>
+                <small
+                  >Click en los filtros de arriba para ver los resultados</small
+                >
+                <div class="table-responsive my-5">
+                  <table class="table table-borderless align-middle">
+                    <div class="text-center justify-content-center">
+                      <tr>
+                        <td scope="col">
+                          <div class="flecha-2 bg-1">Awareness</div>
+                        </td>
+                        <td>
+                          <div class="flecha-2 bg-2">Research</div>
+                        </td>
+                        <td>
+                          <div class="flecha-2 bg-3">Consideration</div>
+                        </td>
+                        <td>
+                          <div class="flecha-2 bg-4">Purchase</div>
+                        </td>
+                        <td>
+                          <div class="flecha-2 bg-5">Retention</div>
+                        </td>
+                      </tr>
+                    </div>
+                    <tbody class="text-center">
+                      <tr>
+                        <td scope="col" colspan="3">
+                          <div class="burbuja-tabla burbuja-larga-tabla bg-violeta dosdos">
+                            Canal
+                          </div>
+                        </td>
+                        <!-- <td scope="col">
+                          <div class="burbuja-tabla bg-violeta dosdos">
+                            Canal
+                          </div>
+                        </td>
+                        <td scope="col">
+                          <div class="burbuja-tabla bg-violeta dosdos">
+                            Canal
+                          </div>
+                        </td> -->
+                        <td scope="col">
+                          <div class="burbuja-tabla bg-violeta unoocho">
+                            Hábitos de compra
+                          </div>
+                        </td>
+                        <td scope="col">
+                          <div class="burbuja-tabla bg-violeta unoocho">
+                            Top Engagement
+                            <i
+                              class="bi bi-info-circle ms-3"
+                              data-bs-toggle="popover"
+                              data-bs-placement="top"
+                              data-bs-content="Productos con mejor performance en el carrusel de Meta"
+                              style="cursor: pointer"
+                            ></i>
+                          </div>
+                        </td>
+                      </tr>
+                    
+                    
+                      <tr class="align-top">
+                        <th scope="row">
+                          <div class="iconos-sociales-tabla">
+                            <i class="bi"
+                              ><span
+                                class="iconify iconify-tabla"
+                                data-icon="mdi:google-ads"
+                              ></span
+                            ></i>
+                            <i class="bi bi-tiktok"></i>
+                            <i class="bi bi-youtube"></i>
+                          </div>
+                        </th>
+                        <td>
+                          <div class="iconos-sociales-tabla">
+                            <i class="bi bi-tiktok"></i>
+                            <i
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="48"
+                                height="48"
+                                fill="currentColor"
+                                class="bi bi-meta"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M8.217 5.243C9.145 3.988 10.171 3 11.483 3 13.96 3 16 6.153 16.001 9.907c0 2.29-.986 3.725-2.757 3.725-1.543 0-2.395-.866-3.924-3.424l-.667-1.123-.118-.197a54.944 54.944 0 0 0-.53-.877l-1.178 2.08c-1.673 2.925-2.615 3.541-3.923 3.541C1.086 13.632 0 12.217 0 9.973 0 6.388 1.995 3 4.598 3c.319 0 .625.039.924.122.31.086.611.22.913.407.577.359 1.154.915 1.782 1.714Zm1.516 2.224c-.252-.41-.494-.787-.727-1.133L9 6.326c.845-1.305 1.543-1.954 2.372-1.954 1.723 0 3.102 2.537 3.102 5.653 0 1.188-.39 1.877-1.195 1.877-.773 0-1.142-.51-2.61-2.87l-.937-1.565ZM4.846 4.756c.725.1 1.385.634 2.34 2.001A212.13 212.13 0 0 0 5.551 9.3c-1.357 2.126-1.826 2.603-2.581 2.603-.777 0-1.24-.682-1.24-1.9 0-2.602 1.298-5.264 2.846-5.264.091 0 .181.006.27.018Z"
+                                />
+                              </svg>
+                            </i>
+                            <i class="bi"
+                              ><span
+                                class="iconify iconify-tabla"
+                                data-icon="mdi:google-ads"
+                              ></span
+                            ></i>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="iconos-sociales-tabla">
+                            <i class="bi bi-tiktok"></i>
+                          </div>
+                        </td>
+                        <td rowspan="7" class="text-start">
+                          Las marcas más compradas por esta generación son:
+                          <b>Tododia, Lumina y Ekos</b><br /><br />
+                          <b>Al cierre de AuraZ:</b>
+                          <ul>
+                            <li>91.5% inactivos</li>
+                            <li>4.6% activos no recientes</li>
+                            <li>3.7% activos recientes</li>
+                          </ul>
+                          <b>De la base convertida:</b>
+                          <ul>
+                            <li>72% son compradores de una única vez</li>
+                            <li>14% son reincidentes(2 órdenes)</li>
+                            <li>14% son frecuentes (más de tres órdenes)</li>
+                          </ul>
+                        </td>
+                        <td rowspan="7">
+                          <div>
+                            <img
+                              src="img/genz/productos.png"
+                              class="img-fluid"
+                              alt="top"
+                            />
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row" colspan="3">
+                          <div class="burbuja-tabla burbuja-larga-tabla bg-violeta dosdos">
+                            Marca
+                          </div>
+                        </th>
+                        <!-- <td>
+                          <div class="burbuja-tabla bg-violeta dosdos">
+                            Marca
+                          </div>
+                        </td>
+                        <td>
+                          <div class="burbuja-tabla bg-violeta dosdos">
+                            Marca
+                          </div>
+                        </td> -->
+                      </tr>
+                      <tr>
+                        <td scope="row">Humor <br />Faces</td>
+                        <td>Humor <br />Faces</td>
+                        <td>UNA<br />Humor</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" colspan="3">
+                          <div class="burbuja-tabla burbuja-larga-tabla bg-violeta dosdos">
+                            Pilar
+                          </div>
+                        </th>
+                        <!-- <td>
+                          <div class="burbuja-tabla bg-violeta dosdos">
+                            Pilar
+                          </div>
+                        </td>
+                        <td>
+                          <div class="burbuja-tabla bg-violeta dosdos">
+                            Pilar
+                          </div>
+                        </td> -->
+                      </tr>
+                      <tr>
+                        <td scope="row">
+                          Omnicanalidad <br />
+                          Atributos de productos
+                        </td>
+                        <td>Ofertas<br />Omnicanalidad</td>
+                        <td>Atributos de producto <br />Ofertas y Usos</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" colspan="3">
+                          <div class="burbuja-tabla burbuja-larga-tabla bg-violeta dosdos">
+                            Top performer
+                          </div>
+                        </th>
+                        <!-- <td>
+                          <div class="burbuja-tabla bg-violeta dosdos">
+                            Top performer
+                          </div>
+                        </td>
+                        <td>
+                          <div class="burbuja-tabla bg-violeta dosdos">
+                            Top performer
+                          </div>
+                        </td> -->
+                      </tr>
+                      <tr class="align-top">
+                        <td>
+                          <img
+                            src="img/genz/top-1.png"
+                            class="img-fluid"
+                            alt="top performer"
+                          />
+                          <img
+                            src="img/genz/top-2.png"
+                            class="img-fluid"
+                            alt="top performer"
+                          />
+                        </td>
+                        <td>
+                          <img
+                            src="img/genz/top-3.png"
+                            class="img-fluid"
+                            alt="top performer"
+                          />
+                          <img
+                            src="img/genz/top-4.png"
+                            class="img-fluid"
+                            alt="top performer"
+                          />
+                        </td>
+                        <td>
+                          <img
+                            src="img/genz/top-5.png"
+                            class="img-fluid"
+                            alt="top performer"
+                          />
+                          <img
+                            src="img/genz/top-6.png"
+                            class="img-fluid"
+                            alt="top performer"
+                          />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="justify-content-center text-center w-100">
+                  <button
+                    class="btn bg-violeta text-uppercase fw-bold text-white btn-lg px-5"
+                  >
+                    Ver moodboard Gen z
+                  </button>
+                </div>
+              </div>
+            </article>
           </section>
 
           <section
@@ -630,7 +1388,7 @@
             class="row justify-content-start my-3"
             style="display: none"
           >
-            <article id="aprendizaje_ch" class="row py-4" style="display: none;">
+            <article id="aprendizaje_ch" class="row py-4" style="display: none">
               <div class="col-md-4">
                 <div class="cuadro-largo bg-verde text-white">
                   <p>
@@ -668,7 +1426,7 @@
               </div>
             </article>
 
-            <div id="journey" class="flechas" style="display: none">
+            <div id="journey2" class="flechas" style="display: none">
               <div class="flecha bg-1">Awareness</div>
               <div class="flecha bg-2">Research</div>
               <div class="flecha bg-3">Consideration</div>
@@ -806,17 +1564,21 @@
                             <i class="bi bi-tiktok"></i>
                           </div>
                         </td>
-                        <td rowspan="7">
-                          Las marcas más compradas por esta generación son: <b>Tododia, Lumina y Ekos</b><br><br>
+                        <td rowspan="7" class="text-start">
+                          Las marcas más compradas por esta generación son:
+                          <b>Tododia, Lumina y Ekos</b><br /><br />
                           <b>Al cierre de AuraZ:</b>
                           <ul>
                             <li>76% de la base es inactiva</li>
                             <li>13% de la base es activa no reciente</li>
-                            <li>11% de la base es activa reciente (realizó una compra en los últimos 3 meses)</li>
+                            <li>
+                              11% de la base es activa reciente (realizó una
+                              compra en los últimos 3 meses)
+                            </li>
                           </ul>
                           <b>De la base convertida:</b>
                           <ul>
-                            <li>71% son compradores de una única vez </li>
+                            <li>71% son compradores de una única vez</li>
                             <li>15% son reincidentes(2 órdenes)</li>
                             <li>14% son frecuentes (más de tres órdenes)</li>
                           </ul>
@@ -950,17 +1712,36 @@
               <div class="collapse" id="tabla-BT" style="display: none">
                 <div class="table-responsive my-5">
                   <table class="table table-borderless align-middle">
-                    <thead class="text-center justify-content-center">
+                    <div class="text-center justify-content-center">
                       <tr>
                         <td scope="col">
+                          <div class="flecha-2 bg-1">Awareness</div>
+                        </td>
+                        <td>
+                          <div class="flecha-2 bg-2">Research</div>
+                        </td>
+                        <td>
+                          <div class="flecha-2 bg-3">Consideration</div>
+                        </td>
+                        <td>
+                          <div class="flecha-2 bg-4">Purchase</div>
+                        </td>
+                        <td>
+                          <div class="flecha-2 bg-5">Retention</div>
+                        </td>
+                      </tr>
+                    </div>
+                    <tbody class="text-center">
+                      <tr>
+                        <td scope="col" colspan="3">
+                          <div class="burbuja-tabla burbuja-larga-tabla bg-rojo dosdos">Canal</div>
+                        </td>
+                        <!-- <td scope="col">
                           <div class="burbuja-tabla bg-rojo dosdos">Canal</div>
                         </td>
                         <td scope="col">
                           <div class="burbuja-tabla bg-rojo dosdos">Canal</div>
-                        </td>
-                        <td scope="col">
-                          <div class="burbuja-tabla bg-rojo dosdos">Canal</div>
-                        </td>
+                        </td> -->
                         <td scope="col">
                           <div class="burbuja-tabla bg-rojo unoocho">
                             Hábitos de compra
@@ -979,8 +1760,7 @@
                           </div>
                         </td>
                       </tr>
-                    </thead>
-                    <tbody class="text-center">
+
                       <tr class="align-top">
                         <th scope="row">
                           <div class="iconos-sociales-tabla">
@@ -1025,17 +1805,21 @@
                             <i class="bi bi-tiktok"></i>
                           </div>
                         </td>
-                        <td rowspan="7">
-                          Las marcas más compradas por esta generación son: <b>Tododia, Lumina y Ekos</b><br><br>
+                        <td rowspan="7" class="text-start">
+                          Las marcas más compradas por esta generación son:
+                          <b>Tododia, Lumina y Ekos</b><br /><br />
                           <b>Al cierre de AuraZ:</b>
                           <ul>
                             <li>76% de la base es inactiva</li>
                             <li>13% de la base es activa no reciente</li>
-                            <li>11% de la base es activa reciente (realizó una compra en los últimos 3 meses)</li>
+                            <li>
+                              11% de la base es activa reciente (realizó una
+                              compra en los últimos 3 meses)
+                            </li>
                           </ul>
                           <b>De la base convertida:</b>
                           <ul>
-                            <li>71% son compradores de una única vez </li>
+                            <li>71% son compradores de una única vez</li>
                             <li>15% son reincidentes(2 órdenes)</li>
                             <li>14% son frecuentes (más de tres órdenes)</li>
                           </ul>
@@ -1051,15 +1835,15 @@
                         </td>
                       </tr>
                       <tr>
-                        <th scope="row">
-                          <div class="burbuja-tabla bg-rojo dosdos">Marca</div>
+                        <th scope="row" colspan="3">
+                          <div class="burbuja-tabla burbuja-larga-tabla bg-rojo dosdos">Marca</div>
                         </th>
-                        <td>
+                        <!-- <td>
                           <div class="burbuja-tabla bg-rojo dosdos">Marca</div>
                         </td>
                         <td>
                           <div class="burbuja-tabla bg-rojo dosdos">Marca</div>
-                        </td>
+                        </td> -->
                       </tr>
                       <tr>
                         <td scope="row">
@@ -1069,15 +1853,15 @@
                         <td>UNA<br />Humor</td>
                       </tr>
                       <tr>
-                        <th scope="row">
-                          <div class="burbuja-tabla bg-rojo dosdos">Pilar</div>
+                        <th scope="row" colspan="3">
+                          <div class="burbuja-tabla burbuja-larga-tabla bg-rojo dosdos">Pilar</div>
                         </th>
-                        <td>
+                        <!-- <td>
                           <div class="burbuja-tabla bg-rojo dosdos">Pilar</div>
                         </td>
                         <td>
                           <div class="burbuja-tabla bg-rojo dosdos">Pilar</div>
-                        </td>
+                        </td> -->
                       </tr>
                       <tr>
                         <td scope="row">
@@ -1087,12 +1871,12 @@
                         <td>Usos<br />Omnicanalidad</td>
                       </tr>
                       <tr>
-                        <th scope="row">
-                          <div class="burbuja-tabla bg-rojo dosdos">
+                        <th scope="row" colspan="3">
+                          <div class="burbuja-tabla burbuja-larga-tabla bg-rojo dosdos">
                             Top performer
                           </div>
                         </th>
-                        <td>
+                        <!-- <td>
                           <div class="burbuja-tabla bg-rojo dosdos">
                             Top performer
                           </div>
@@ -1101,7 +1885,7 @@
                           <div class="burbuja-tabla bg-rojo dosdos">
                             Top performer
                           </div>
-                        </td>
+                        </td> -->
                       </tr>
                       <tr class="align-top">
                         <td>
@@ -1155,9 +1939,33 @@
               <div class="collapse" id="tabla-genz" style="display: none">
                 <div class="table-responsive my-5">
                   <table class="table table-borderless align-middle">
-                    <thead class="text-center justify-content-center">
+                    <div class="text-center justify-content-center">
                       <tr>
                         <td scope="col">
+                          <div class="flecha-2 bg-1">Awareness</div>
+                        </td>
+                        <td>
+                          <div class="flecha-2 bg-2">Research</div>
+                        </td>
+                        <td>
+                          <div class="flecha-2 bg-3">Consideration</div>
+                        </td>
+                        <td>
+                          <div class="flecha-2 bg-4">Purchase</div>
+                        </td>
+                        <td>
+                          <div class="flecha-2 bg-5">Retention</div>
+                        </td>
+                      </tr>
+                    </div>
+                    <tbody class="text-center">
+                      <tr>
+                        <td scope="col" colspan="3">
+                          <div class="burbuja-tabla burbuja-larga-tabla bg-violeta dosdos">
+                            Canal
+                          </div>
+                        </td>
+                        <!-- <td scope="col">
                           <div class="burbuja-tabla bg-violeta dosdos">
                             Canal
                           </div>
@@ -1166,12 +1974,7 @@
                           <div class="burbuja-tabla bg-violeta dosdos">
                             Canal
                           </div>
-                        </td>
-                        <td scope="col">
-                          <div class="burbuja-tabla bg-violeta dosdos">
-                            Canal
-                          </div>
-                        </td>
+                        </td> -->
                         <td scope="col">
                           <div class="burbuja-tabla bg-violeta unoocho">
                             Hábitos de compra
@@ -1190,8 +1993,8 @@
                           </div>
                         </td>
                       </tr>
-                    </thead>
-                    <tbody class="text-center">
+                    
+                    
                       <tr class="align-top">
                         <th scope="row">
                           <div class="iconos-sociales-tabla">
@@ -1237,16 +2040,20 @@
                           </div>
                         </td>
                         <td rowspan="7" class="text-start">
-                          Las marcas más compradas por esta generación son: <b>Tododia, Lumina y Ekos</b><br><br>
+                          Las marcas más compradas por esta generación son:
+                          <b>Tododia, Lumina y Ekos</b><br /><br />
                           <b>Al cierre de AuraZ:</b>
                           <ul>
                             <li>76% de la base es inactiva</li>
                             <li>13% de la base es activa no reciente</li>
-                            <li>11% de la base es activa reciente (realizó una compra en los últimos 3 meses)</li>
+                            <li>
+                              11% de la base es activa reciente (realizó una
+                              compra en los últimos 3 meses)
+                            </li>
                           </ul>
                           <b>De la base convertida:</b>
                           <ul>
-                            <li>71% son compradores de una única vez </li>
+                            <li>71% son compradores de una única vez</li>
                             <li>15% son reincidentes(2 órdenes)</li>
                             <li>14% son frecuentes (más de tres órdenes)</li>
                           </ul>
@@ -1262,12 +2069,12 @@
                         </td>
                       </tr>
                       <tr>
-                        <th scope="row">
-                          <div class="burbuja-tabla bg-violeta dosdos">
+                        <th scope="row" colspan="3">
+                          <div class="burbuja-tabla burbuja-larga-tabla bg-violeta dosdos">
                             Marca
                           </div>
                         </th>
-                        <td>
+                        <!-- <td>
                           <div class="burbuja-tabla bg-violeta dosdos">
                             Marca
                           </div>
@@ -1276,7 +2083,7 @@
                           <div class="burbuja-tabla bg-violeta dosdos">
                             Marca
                           </div>
-                        </td>
+                        </td> -->
                       </tr>
                       <tr>
                         <td scope="row">Humor <br />Faces</td>
@@ -1284,12 +2091,12 @@
                         <td>UNA<br />Humor</td>
                       </tr>
                       <tr>
-                        <th scope="row">
-                          <div class="burbuja-tabla bg-violeta dosdos">
+                        <th scope="row" colspan="3">
+                          <div class="burbuja-tabla burbuja-larga-tabla bg-violeta dosdos">
                             Pilar
                           </div>
                         </th>
-                        <td>
+                        <!-- <td>
                           <div class="burbuja-tabla bg-violeta dosdos">
                             Pilar
                           </div>
@@ -1298,7 +2105,7 @@
                           <div class="burbuja-tabla bg-violeta dosdos">
                             Pilar
                           </div>
-                        </td>
+                        </td> -->
                       </tr>
                       <tr>
                         <td scope="row">
@@ -1309,12 +2116,12 @@
                         <td>Atributos de producto <br />Ofertas y Usos</td>
                       </tr>
                       <tr>
-                        <th scope="row">
-                          <div class="burbuja-tabla bg-violeta dosdos">
+                        <th scope="row" colspan="3">
+                          <div class="burbuja-tabla burbuja-larga-tabla bg-violeta dosdos">
                             Top performer
                           </div>
                         </th>
-                        <td>
+                        <!-- <td>
                           <div class="burbuja-tabla bg-violeta dosdos">
                             Top performer
                           </div>
@@ -1323,7 +2130,7 @@
                           <div class="burbuja-tabla bg-violeta dosdos">
                             Top performer
                           </div>
-                        </td>
+                        </td> -->
                       </tr>
                       <tr class="align-top">
                         <td>
@@ -1379,7 +2186,7 @@
         </article>
       </section>
 
-      <section class="position-relative" style="z-index: 30;">
+      <section class="position-relative" style="z-index: 30">
         <div class="aprendizajes_canal">
           <article class="container">
             <h4 class="dosdos fw-bold">Aprendizajes por canal</h4>

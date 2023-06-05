@@ -125,19 +125,33 @@ function toggleContent(value) {
     tabs.forEach((tab) => (tab.style.display = "none"));
     
     let banderas = document.getElementById('banderas');
-    let snake_act = document.querySelector(`#viborita-activista`);
+
+    let snake_act = document.querySelector('#viborita-activista');
     let snake_bt = document.querySelector(`#viborita-BT`);
     let snake_genz = document.querySelector(`#viborita-genz`);
-    let referencias = document.getElementById('referencias');
+
+    let snake_act_ar = document.querySelector('#viborita-activista-ar');
+    let snake_bt_ar = document.querySelector(`#viborita-BT-ar`);
+    let snake_genz_ar = document.querySelector(`#viborita-genz-ar`);
+
+    let referencias = document.querySelector('#referencias');
+    let referencias2 = document.getElementById('referencias2');
     let journey = document.getElementById('journey');
+    let journey2 = document.getElementById('journey2');
     let aprendizaje_ch = document.getElementById('aprendizaje_ch');
     let aprendizaje_ar = document.getElementById('aprendizaje_ar');
 
     snake_act.style.display = "none";
     snake_bt.style.display = "none";
     snake_genz.style.display = "none";
+    snake_act_ar.style.display = "none";
+    snake_bt_ar.style.display = "none";
+    snake_genz_ar.style.display = "none";
+
     referencias.style.display = "flex";
+    referencias2.style.display = "flex";
     journey.style.display = "flex";
+    journey2.style.display = "flex";
     aprendizaje_ch.style.display = "flex";
     aprendizaje_ar.style.display = "flex";
     banderas.style.display = "inline";
@@ -145,12 +159,16 @@ function toggleContent(value) {
   
     // busco el tab que necesito activar y lo muestro
     let activeTab = document.querySelector(`#tabla-${value}`);
+    let activeTabAr = document.querySelector(`#tabla-${value}-ar`);
     let activeSnake = document.querySelector(`#viborita-${value}`);
+    let activeSnakeAr = document.querySelector(`#viborita-${value}-ar`);
 
   
     // valido si existe el elemento antes de aplicar el cambio
     if (activeTab) activeTab.style.display = "block";
+    if (activeTabAr) activeTabAr.style.display = "block";
     if (activeSnake) activeSnake.style.display = "block";
+    if (activeSnakeAr) activeSnakeAr.style.display = "block";
     
   }
 
