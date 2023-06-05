@@ -100,6 +100,22 @@ function toggleContentChannel(value) {
 
 }
 
+function togglePais(value) {
+  if (!value) return;
+
+  document.querySelector('#btn-pais-argentina').src = "img/argentina-off.png";
+  document.querySelector('#argentina').style.display = "none";
+
+  document.querySelector('#btn-pais-chile').src = "img/chile-off.png";
+  document.querySelector('#chile').style.display = "none";
+
+  let btn_press = document.querySelector(`#btn-pais-${value}`);
+  btn_press.src = `img/${value}-on.png`;
+
+  let channels = document.querySelector(`#${value}`);
+  channels.style.display = "flex";
+}
+
 function toggleContent(value) {
     // si no recibe value, retorna sin hacer nada
     if (!value) return;
@@ -111,10 +127,14 @@ function toggleContent(value) {
     let snake_act = document.querySelector(`#viborita-activista`);
     let snake_bt = document.querySelector(`#viborita-BT`);
     let snake_genz = document.querySelector(`#viborita-genz`);
+    let referencias = document.getElementById('referencias');
+    let journey = document.getElementById('journey')
 
     snake_act.style.display = "none";
     snake_bt.style.display = "none";
     snake_genz.style.display = "none";
+    referencias.style.display = "flex";
+    journey.style.display = "flex"
 
   
     // busco el tab que necesito activar y lo muestro
@@ -130,18 +150,18 @@ function toggleContent(value) {
 
   function verEjemplo(str) {
 
-    var element = document.getElementById("btn1");
-    var element1 = document.getElementById("btn2");
+    // var element = document.getElementById("verejemplo");
+    // var element1 = document.getElementById("btn2");
+    let pintados = document.querySelectorAll("#pintados")
    
+    for(let i = 0; i < pintados.length; i++) 
       if(str==1){
    
-      element1.classList.remove("mystyle1");
-      element.classList.toggle("mystyle");
+      pintados[i].classList.toggle("pintado");
    
        }else{
    
-      element1.classList.toggle("mystyle1");
-      element.classList.remove("mystyle");
+      pintados[i].classList.remove("pintado");
    
        }
    
