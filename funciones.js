@@ -86,6 +86,9 @@ function toggleContentChannel(value) {
   
   document.querySelector(`#btn-canal-instagram`).src = "img/instagram_off.png";
   document.querySelector(`#instagram`).style.display = "none";
+
+  document.querySelector(`#btn-canal-influencer`).src = "img/influencer_off.png";
+  document.querySelector(`#influencer`).style.display = "none";
   
   // document.querySelector(`#btn-canal-sms`).src = "img/sms_off.png";
   // document.querySelector(`#sms`).style.display = "none";
