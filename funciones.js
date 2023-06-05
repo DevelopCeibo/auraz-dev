@@ -123,18 +123,24 @@ function toggleContent(value) {
     // busco todos los tabs y los oculto
     let tabs = document.querySelectorAll(".collapse");
     tabs.forEach((tab) => (tab.style.display = "none"));
-
+    
+    let banderas = document.getElementById('banderas');
     let snake_act = document.querySelector(`#viborita-activista`);
     let snake_bt = document.querySelector(`#viborita-BT`);
     let snake_genz = document.querySelector(`#viborita-genz`);
     let referencias = document.getElementById('referencias');
-    let journey = document.getElementById('journey')
+    let journey = document.getElementById('journey');
+    let aprendizaje_ch = document.getElementById('aprendizaje_ch');
+    let aprendizaje_ar = document.getElementById('aprendizaje_ar');
 
     snake_act.style.display = "none";
     snake_bt.style.display = "none";
     snake_genz.style.display = "none";
     referencias.style.display = "flex";
-    journey.style.display = "flex"
+    journey.style.display = "flex";
+    aprendizaje_ch.style.display = "flex";
+    aprendizaje_ar.style.display = "flex";
+    banderas.style.display = "inline";
 
   
     // busco el tab que necesito activar y lo muestro

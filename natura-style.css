@@ -334,6 +334,10 @@ ul > li::marker {
   z-index: 20;
   top: 195px;
   padding: 10px 0;
+  width: 70px;
+  border-radius: 20px;
+  margin-left: -50px;
+  display: inline-grid;
 }
 .flechas {
   display: flex;
@@ -350,6 +354,15 @@ ul > li::marker {
   position: relative;
   text-align: center;
   min-width: 220px;
+}
+.flecha-2 {
+  padding: 15px 30px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  text-align: center;
+  width: 220px;
 }
 .bg-1 {
   background-color: #E1A066;
@@ -668,6 +681,9 @@ ul > li::marker {
     overflow-y: auto;
   }
   .banderas-filtro {
-    top:38%
+    top:38%;
+    display: block;
+    margin: 0;
+    width: 170px;
   }
 }
