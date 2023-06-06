@@ -634,6 +634,10 @@ ul > li::marker {
   }
   .flechas {
     justify-content:start;
+    /* overflow-x: auto;
+    -webkit-overflow-scrolling: touch; */
+  }
+  .grafica {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
@@ -719,12 +723,18 @@ ul > li::marker {
     overflow-y: auto;
   }
   .banderas-filtro {
-    top:320px;
+    top:300px;
     display: block;
     margin: 0;
-    width: 170px;
+    width: 130px;
+    & img {
+      width: 40px;
+    }
   }
   .filtros {
     gap: 1rem;
+  }
+  .gusanito .img-fluid {
+    max-width: initial;
   }
 }
