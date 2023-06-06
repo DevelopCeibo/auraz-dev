@@ -723,16 +723,21 @@ ul > li::marker {
     overflow-y: auto;
   }
   .banderas-filtro {
-    top:300px;
+    top:240px;
     display: block;
     margin: 0;
-    width: 130px;
+    width: 110px;
     & img {
-      width: 40px;
+      width: 35px;
     }
   }
   .filtros {
     gap: 1rem;
+    top: 80px;
+    padding: 20px 0;
+  }
+  .boton-filtro {
+    font-size: 15px;
   }
   .gusanito .img-fluid {
     max-width: initial;
