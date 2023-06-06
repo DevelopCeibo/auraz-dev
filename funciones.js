@@ -124,7 +124,7 @@ function toggleContent(value) {
     if (!value) return;
   
     // busco todos los tabs y los oculto
-    let tabs = document.querySelectorAll(".collapse");
+    let tabs = document.querySelectorAll(".colapsar");
     tabs.forEach((tab) => (tab.style.display = "none"));
     
     let banderas = document.getElementById('banderas');
