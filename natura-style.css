@@ -349,10 +349,10 @@ ul > li::marker {
   z-index: 20;
   top: 195px;
   padding: 10px 0;
-  width: 70px;
+  width: 140px;
   border-radius: 20px;
   margin-left: -50px;
-  display: inline-grid;
+  display: flex;
 }
 .flechas {
   display: flex;
