@@ -81,11 +81,11 @@ function toggleContentChannel(value) {
   document.querySelector(`#btn-canal-email`).src = "img/email_off.png";
   document.querySelector(`#email`).style.display = "none";
   
-  // document.querySelector(`#btn-canal-meta`).src = "img/meta_off.png";
-  // document.querySelector(`#meta`).style.display = "none";
+  document.querySelector(`#btn-canal-meta`).src = "img/meta_off.png";
+  document.querySelector(`#meta`).style.display = "none";
   
-  document.querySelector(`#btn-canal-instagram`).src = "img/instagram_off.png";
-  document.querySelector(`#instagram`).style.display = "none";
+  // document.querySelector(`#btn-canal-instagram`).src = "img/instagram_off.png";
+  // document.querySelector(`#instagram`).style.display = "none";
 
   document.querySelector(`#btn-canal-influencer`).src = "img/influencer_off.png";
   document.querySelector(`#influencer`).style.display = "none";
