@@ -655,6 +655,9 @@ ul > li::marker {
     top: 0;
     left: 0;
   }
+  nav {
+    z-index: 50;
+  }
 }
 @media screen and (max-width: 575.98px) {
 
@@ -716,7 +719,7 @@ ul > li::marker {
     overflow-y: auto;
   }
   .banderas-filtro {
-    top:38%;
+    top:320px;
     display: block;
     margin: 0;
     width: 170px;
