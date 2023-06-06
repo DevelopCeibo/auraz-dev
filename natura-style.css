@@ -286,8 +286,8 @@ ul > li::marker {
 }
 .filtros {
   display: flex;
-  gap: 1rem;
-  justify-content: space-between;
+  gap: 5rem;
+  justify-content: start;
   padding: 30px 0;
   flex-wrap: wrap;
   position: sticky;
@@ -377,7 +377,7 @@ ul > li::marker {
   color: #fff;
   position: relative;
   text-align: center;
-  width: 220px;
+  width: 200px;
 }
 .bg-1 {
   background-color: #E1A066;
@@ -723,5 +723,8 @@ ul > li::marker {
     display: block;
     margin: 0;
     width: 170px;
+  }
+  .filtros {
+    gap: 1rem;
   }
 }
