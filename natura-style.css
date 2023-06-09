@@ -594,8 +594,12 @@ ul > li::marker {
 }
 .icono-cuadro {
   position: absolute;
-  bottom: 15px;
+  bottom: 5px;
   color: #f1f1f1;
+}
+.bandera-cuadro {
+  position: absolute;
+  top: 15px;
 }
 #que-es {
   align-items: center;
@@ -712,7 +716,7 @@ ul > li::marker {
     right: 34px;
     top: 14%;
   }
-  #tiktok, #twitter, #ads, #sms, #meta, #instagram, #email, #youtube {
+  #tiktok, #twitter, #ads, #sms, #meta, #instagram, #email, #youtube, #influencer {
     flex-direction: row;
     flex-wrap: nowrap;
     overflow-y: auto;
